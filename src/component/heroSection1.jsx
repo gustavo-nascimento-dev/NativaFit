@@ -5,7 +5,7 @@ export function HeroSection1() {
     <div className="relative h-[710px] w-full bg-cover bg-center text-white ml:bg-[url('/nativaAparelhosPC.jpeg')] bg-[url('/nativaAparelhos.jpg')]">
       {/* Hero Content */}
       <div className="absolute inset-0 flex flex-col justify-end mb-8 px-6 max-w-xl z-10">
-        <div className="bg-base-100 w-[280px] ml:w-[400px] p-6 py-10">
+        <div className="bg-base-100 p-6 py-10">
           <h1 className="text-2xl md:text-6xl font-display font-bold leading-tight mb-4">
             A Nativa Fit é <br />
             Para você <br />

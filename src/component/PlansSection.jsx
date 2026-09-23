@@ -5,6 +5,7 @@ import { ReusableHero } from "./ReusableHero.jsx";
 export function PlansSection() {
   const [familiaBg, setFamiliaBg] = useState("/familiaAndando.jpg");
   const [brothersBg, setBrothersBg] = useState("/amigosTreino.jpg");
+  const [workBg, setWorkBg] = useState("/contratando.jpg");
 
   useEffect(() => {
     const updateBackgrounds = () => {
@@ -13,6 +14,8 @@ export function PlansSection() {
       setFamiliaBg(isDesktop ? "/familiaAndandoPC.jpg" : "/familiaAndando.jpg");
 
       setBrothersBg(isDesktop ? "/amigosTreinoPC.jpg" : "/amigosTreino.jpg");
+
+      setWorkBg(isDesktop ? "/contratandoPC.jpg" : "/contratando.jpg");
     };
 
     updateBackgrounds(); // inicial
@@ -95,7 +98,17 @@ export function PlansSection() {
         title="Comunidade Free Time"
         subtitle="Acompanhamento individual com professor dedicado e horários flexíveis para você treinar no seu tempo"
         backgroundImage={brothersBg}
-        customDivCss="bg-gradient-to-t from-base-100/0 via-base-100/20 to-base-100"
+        customDivCss="bg-gradient-to-t from-base-100/0 via-base-100/20 to-base-100 bg-gradient-to-b from-black/0 via-base-100/30 to-base-100"
+        customDivCss1="bg-gradient-to-b from-black/0 via-base-100/30 to-base-100"
+        buttonText="Quero fazer parte"
+        buttonLink="https://wa.me/5591992487292?text=Ol%C3%A1!%20Gostaria%20de%20participar%20do%20projeto%20Brothers"
+      />
+
+      <ReusableHero
+        title="Trabalhe conosco"
+        subtitle="Acompanhamento individual com professor dedicado e horários flexíveis para você treinar no seu tempo"
+        backgroundImage={workBg}
+        customDivCss="bg-gradient-to-t from-base-100/0 via-base-100/20 to-base-100 "
         buttonText="Quero fazer parte"
         buttonLink="https://wa.me/5591992487292?text=Ol%C3%A1!%20Gostaria%20de%20participar%20do%20projeto%20Brothers"
       />

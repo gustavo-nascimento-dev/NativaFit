@@ -6,9 +6,11 @@ export function ReusableHero({
   backgroundImage,
   height = "h-[520px]",
   customDivCss = "",
+  customDivCss1 = "",
   buttonText,
   onClick,
   buttonLink,
+  
 }) {
   return (
     <section
@@ -17,9 +19,11 @@ export function ReusableHero({
     >
       {/* Overlay */}
       <div className={`absolute inset-0 bg-black/60 ${customDivCss}`} />
+      {/* Overlay 1
+      <div className={`absolute inset-0 ${customDivCss1}`} /> */}
 
       {/* Conteúdo */}
-      <div className="relative z-10 flex items-center justify-center h-full">
+      <div className={`relative z-10 flex items-center justify-center h-full`}>
         <div className="text-center px-6 max-w-3xl">
           <h1 className="text-4xl md:text-5xl font-display font-extrabold text-white mb-6 leading-tight">
             {title}
