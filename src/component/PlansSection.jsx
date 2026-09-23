@@ -45,7 +45,7 @@ export function PlansSection() {
             id: 1,
             title: "Mensal",
             price: "R$ 197,00 / mês",
-            description: "Acesso por um dia.",
+            description: "Acesso por um mês.",
             features: [
               "Pagamento em Dinheiro, Pix ou Cartão",
               "Musculação",
@@ -62,7 +62,7 @@ export function PlansSection() {
               "Pagamento no Cartão",
               "Musculação",
               "Treinos Montados individualmente",
-              "Aeróbio",
+              "Aeróbico",
               "Aulas coletivas",
             ],
             highlight: true,
